@@ -7,11 +7,12 @@ using `placeIconWithTemp` method.
 
 1. Put module source code ([weather_icon.js](https://github.com/TimsonL/weather_icon-module-example/blob/master/weather_icon.js)) on your CDN.
 
-2. Load both [Yandex Maps JS API 2.1](http://api.yandex.com/maps/doc/jsapi/) and module source code by adding following code into &lt;head&gt; section of your page
+2. Load [Yandex Maps JS API 2.1](http://api.yandex.com/maps/doc/jsapi/), module and .css file source codes by adding following code into &lt;head&gt; section of your page
    ```html
    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
    <!-- Change ... to your CDN host name -->
    <script src=".../weather_icon.js" type="text/javascript"></script>
+   <script src=".../weather_icon.css" type ="text/css"></script>
    ```
 
 3. Get access to module functions by using [ymaps.modules.require](http://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/modules.require.xml) method
