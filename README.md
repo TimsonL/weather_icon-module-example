@@ -35,10 +35,10 @@ using `placeIconWithTemp` method.
 
 | Name| Returns | Description |
 |----|------------|----------|
-| placeIconWithTemp | geoObject | Returns a place mark as geoObject. |
+| placeIconWithTemp | vow.promise | Returns a promise with a placemark as geoObject. |
 
 #### Parameters:
 | Parameter | Default value | Description |
 |---------|-----------------------|----------|
-| searchRequest | - | Type: String, number or object.<br>Access weather data through pointing name of the city, it's id or latitude and longitude coordinates |
+| searchRequest | - | Type: String, number or Number[].<br>Access weather data through pointing name of the city, it's id or latitude and longitude coordinates |
 
