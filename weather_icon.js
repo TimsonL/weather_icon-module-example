@@ -63,28 +63,3 @@ ymaps.modules.define('WeatherTempIcon', ['templateLayoutFactory', 'util.defineCl
   
     provide(weatherIconWithTemp);
   });
-
-ymaps.ready(init);
-
-function init() {
-  var myMap = new ymaps.Map('map', {
-    center: [55.733835, 37.588227],
-    zoom: 5
-  }, {
-    searchControlProvider: 'yandex#search'
-  });
-
-  ymaps.modules.require(['WeatherTempIcon'])
-    .spread(
-      function(weatherIconWithTemp) {
-
-        var weather = new weatherIconWithTemp('5308e518b6ff52c10a905835dbdd6e98', {
-          tempType: 'kel'
-        });
-        weather.placeIconWithTemp('Moscow')
-          .then(function(geoObject) {
-            myMap.geoObjects.add(geoObject);
-          });
-      }
-    )
-}
