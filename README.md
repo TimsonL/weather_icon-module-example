@@ -42,18 +42,3 @@ using `placeIconWithTemp` method.
 |---------|-----------------------|----------|
 | searchRequest | - | Type: String, number or object.<br>Access weather data through pointing name of the city, it's id or latitude and longitude coordinates |
 
-
-### getMap
-#### Returns:
-reference to [Map](http://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/Map.xml) object.
-
-### setMap
-Sets [Map](http://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/Map.xml) instance to render `Heatmap` object over it.
-
-#### Returns:
-self-reference.
-
-#### Parameters:
-| Parameter | Default value | Description |
-|----------|-----------------------|----------|
-| map | - | Type:Map<br/>[Map](http://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/Map.xml) instance to render `Heatmap` object over it. |
