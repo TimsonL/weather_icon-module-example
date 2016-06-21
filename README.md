@@ -16,7 +16,7 @@ using `placeIconWithTemp` method.
 
 3. Get access to module functions by using [ymaps.modules.require](http://api.yandex.ru/maps/doc/jsapi/2.1/ref/reference/modules.require.xml) method
    ```js
-   ymaps.modules.require(['WeatherTempIcon']).spread(function () {
+   ymaps.modules.require(['WeatherTempIcon']).spread(function (weatherIconWithTemp) {
         var weatherIcon = new weatherIconWithTemp(appid, {options});
    });
    ```
